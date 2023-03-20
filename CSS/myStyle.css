@@ -1,0 +1,504 @@
+html, body {
+    min-height: 100%;
+    font-family: calibri;
+}
+::-webkit-scrollbar {
+	width: 3px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 5px #181a1b; 
+	border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: orange; 
+	border-radius: 10px;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: orange;
+}
+.to-top {
+	margin-bottom: -20px;
+	margin-right: -20px;
+	position: fixed;
+	bottom: 9px;
+	right: 32px;
+	width: 35px;
+	height: 35px;
+	border-style: solid;
+	border-color: orange;
+	border-radius: 40%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 32px;
+	text-decoration: none;
+	opacity: 0;
+	pointer-events: none;
+	transition: all .5s;
+}
+.to-top.active {
+	bottom: 32px;
+	pointer-events: auto;
+	opacity: 1;
+	color: orange;
+}
+.to-top:hover {
+	background-color: orange;
+	color: whitesmoke;
+}
+.body0 {
+	background-color: #181a1b;
+}
+.Explore {
+	background-color: transparent;
+}
+.videxplore {
+	right: 0;
+	bottom: 0;
+	position:fixed;
+	width: 100%;
+	z-index: -1 !important;
+}
+@media (min-aspect-ratio: 16/9){
+	.videxplore {
+		width: 100%;
+		height: auto;
+	}
+}
+@media (max-aspect-ratio: 16/9) {
+	.videxplore {
+		width: auto;
+		height: 100%;
+	}
+}
+@media (min-width: 1200px) {
+  .pexplore {
+	background-color: transparent;
+	color: whitesmoke;
+	transition: .30s;
+	text-align: center;
+	font-size: 60px;
+	margin-bottom: 80px;
+	cursor: default;
+  }
+}
+/* If the screen size is smaller than 1200px, set the font-size to 80px */
+@media (max-width: 1199.98px) {
+  .pexplore {
+    background-color: transparent;
+	color: whitesmoke;
+	transition: .30s;
+	text-align: center;
+	font-size: 30px;
+	margin-bottom: 100px;
+	cursor: default;
+  }
+}
+.fixed-bottom {
+	color: whitesmoke;
+	transition: .30s;
+	text-align: center;
+	font-size: 8vw;
+	bottom: 0;
+	float: center;
+	cursor: default;
+}
+@media (min-width: 1200px) {
+  .fixed-bottom {
+    font-size: 60px;
+	cursor: default;
+  }
+}
+/* If the screen size is smaller than 1200px, set the font-size to 80px */
+@media (max-width: 1199.98px) {
+  .fixed-bottom {
+    font-size: 30px;
+  }
+}
+.pexplore:hover {
+	-webkit-text-stroke: 2px #fff;
+	color: transparent;
+}
+.fixed-bottom:hover {
+	-webkit-text-stroke: 2px #fff;
+	color: transparent;
+}
+.img-fluid {
+	display: block;
+  margin-left: auto;
+  margin-right: auto;
+	height: 300px;
+	transform-origin: -5 1;
+	filter: brightness(80%);
+	transition: all .30s ease;
+	width: 100% \9;
+}
+@media (min-width: 1200px) {
+  .img-fluid {
+  	height: 300px;
+  }
+}
+/* If the screen size is smaller than 1200px, set the font-size to 80px */
+@media (max-width: 1199.98px) {
+  .img-fluid {
+  	height: 200px;
+  }
+}
+.img-fluid:hover {
+	transform: scale(1.03);
+	filter: brightness(100%);
+	transition: all .30s ease;
+}
+h1 {
+	background-color: #bb7410;
+}
+.fb {
+	height: 25px;
+	float: right;
+	margin-right: 5px;
+}
+.Sign-in_button {
+	font-size: 20px;
+	float: right;
+	text-decoration: none;
+	color: whitesmoke;
+}
+.trending {
+	color: whitesmoke;
+	font-size: 20px;
+	background-color: #bb7410;
+}
+.flashnews_today {
+	background-color: black;
+	position: absolute;
+	color: whitesmoke;
+	float: center;
+	font-size: 15px;
+	margin-left: -30px;
+}
+@media (min-width: 1200px) {
+  .img-fluid2 {
+  	padding: 10px;
+  	padding-left: 0;
+  	padding-right: 0;
+  }
+}
+/* If the screen size is smaller than 1200px, set the font-size to 80px */
+@media (max-width: 1199.98px) {
+  .img-fluid2 {
+  	padding: 10px;
+  	padding-left: 0;
+  	padding-right: 0;
+  }
+}
+.navbar {
+	background-color: #1e486d;
+	margin-top: -10px;
+	border-bottom-style: solid;
+	border-bottom-color: orange;
+	transition: all 0.5s ease;
+}
+.navbar:hover {
+	background-color: #1a3955;
+}
+.navbar-brand {
+	transition: all 0.5s ease;
+}
+.navbar-brand:hover {
+	color: orange;
+}
+.dropdawn {
+	color: whitesmoke;
+	font-size: 14px;
+}
+.dropdawn:hover {
+	color: orange;
+}
+.dropdown-menu {
+	background-color: #1e486d;
+	border-color: orange;
+	border-style: solid;
+	border-radius: 15px;
+	overflow: hidden;
+	z-index: -1;
+	transition: all 0.5s ease;
+	max-height: 430px;
+	overflow-y: scroll;	
+}
+.dropdown-menu::-webkit-scrollbar {
+	display: none;
+}
+.dropdown-menu:hover {
+	background-color: #1a3955;
+	top: 70px;
+}
+.dropdown-item {
+	border-style: none;
+	color: whitesmoke;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	transition: all 0.5s ease;
+	font-size: 13px;
+}
+.dropdown-item:hover {
+	color: orange;
+}
+.form-control {
+	border-color: orange;
+	border-style: solid;
+}
+@media (min-width: 1200px) {
+  .slideshow-container3 {
+  margin-top: 50px;
+	position: relative;
+  }
+}
+/* If the screen size is smaller than 1200px, set the font-size to 80px */
+@media (max-width: 1199.98px) {
+  .slideshow-container3 {
+	overflow: hidden;
+	margin-top: 50px;
+	position: relative;
+  }
+}
+@media (min-width: 1200px) {
+  .img-thumbnail {
+  	height: 400px;
+  	width: 540px;
+  	border-radius: 10px;
+   	transform-origin: -5 1;
+		filter: brightness(80%);
+		transition: all .30s ease;
+  }
+}
+/* If the screen size is smaller than 1200px, set the font-size to 80px */
+@media (max-width: 1199.98px) {
+  .img-thumbnail {
+  	height: 200px;
+  	width: 270px;
+		border-radius: 10px;
+  }
+}
+.img-thumbnail:hover {
+	transform: scale(1.03);
+	filter: brightness(100%);
+	transition: all .30s ease;
+	border-radius: 0;
+}
+.prev:hover, .next:hover {
+	background-color: rgba(0,0,0,0.8);
+}
+@media (min-width: 1200px) {
+  .prev, .next {
+	cursor: pointer;
+	position: absolute;
+	top: 30%;
+	width: auto;
+	padding: 16px;
+	color: orange;
+	font-weight: bold;
+	font-size: 18px;
+	transition: 0.6s ease;
+	border-radius: 50px 50px;
+	user-select: none;
+	text-decoration: none;
+	margin-left: -263px;
+}
+}
+.prev:hover {
+	background-color: orange;
+	color: whitesmoke;
+}
+
+/* If the screen size is smaller than 1200px, set the font-size to 80px */
+@media (max-width: 1199.98px) {
+  .prev, .next {
+	cursor: pointer;
+	position: absolute;
+	top: 30%;
+	width: auto;
+	padding: 8px;
+	color: orange;
+	font-weight: bold;
+	font-size: 12px;
+	transition: 0.6s ease;
+	border-radius: 50px 50px;
+	user-select: none;
+	text-decoration: none;
+	margin-left: -132px;
+  }
+}
+@media (min-width: 1200px) {
+  .next {
+	border-radius: 50px 50px;
+	margin-left: 220px;
+}
+}
+.next:hover {
+	background-color: orange;
+	color: whitesmoke;
+}
+
+/* If the screen size is smaller than 1200px, set the font-size to 80px */
+@media (max-width: 1199.98px) {
+  .next {
+	border-radius: 50px 50px;
+	margin-left: 110px;
+}
+}
+@media (min-width: 1200px) {
+  .img-thumbnail2 {
+  	height: 200px;
+  	width: 200;
+  	border-radius: 10px;
+   	transform-origin: -5 1;
+		filter: brightness(80%);
+		transition: all .30s ease;
+  }
+}
+/* If the screen size is smaller than 1200px, set the font-size to 80px */
+@media (max-width: 1199.98px) {
+  .img-thumbnail2 {
+  	height: 100px;
+  	width: 170px;
+  	border-radius: 10px;	
+  }
+}
+.img-thumbnail2:hover {
+	transform: scale(1.03);
+	filter: brightness(100%);
+	transition: all .30s ease;
+	border-radius: 0;
+}
+.ph1 {
+	margin-top: 30px;
+	color: orange;
+	font-size: 30px;
+	text-align: center;
+	font-weight: bolder;
+}
+@media (min-width: 1200px) {
+  .pa1 {
+  color: #a69e92;
+	text-align: justify;
+	margin-left: 100px;
+	margin-right: 100px;
+  }
+}
+/* If the screen size is smaller than 1200px, set the font-size to 80px */
+@media (max-width: 1199.98px) {
+  .pa1 {
+  color: #a69e92;
+	text-align: justify;
+	margin-left: 20px;
+	margin-right: 20px;
+  }
+}
+
+.ph2 {
+	margin-top: 30px;
+	color: orange;
+	font-size: 30px;
+	text-align: center;
+	font-weight: bolder;
+}
+
+.linkcolor-a1 {
+		color: whitesmoke;
+		text-decoration: none;
+		font-weight: bold;
+		border-radius: 50px;	
+		background-color: #717171;
+		padding: 10px 20px;
+		text-align: center;
+		cursor: pointer;
+		-webkit-transition: all .20s ease;
+		-moz-transition: all .20s ease;
+		-ms-transition: all .20s ease;
+		-o-transition: all .20s ease;
+		transition: all .20s ease;
+	}
+	.linkcolor-a1:hover {
+		opacity: 1;
+		visibility: visible;
+		background-color: orange;
+		color: whitesmoke;
+	}
+
+.ph3 {
+	margin-top: 30px;
+	color: orange;
+	font-size: 30px;
+	text-align: center;
+	font-weight: bolder;
+}
+.ph4 {
+	color: orange;
+	font-size: 20px;
+	text-align: center;
+	font-weight: bolder;
+}
+@media (min-width: 1200px) {
+  .pa2 {
+  color: #a69e92;
+	text-align: justify;
+	margin-left: 100px;
+	margin-right: 100px;
+  }
+}
+/* If the screen size is smaller than 1200px, set the font-size to 80px */
+@media (max-width: 1199.98px) {
+  .pa2 {
+  color: #a69e92;
+	text-align: justify;
+	margin-left: 20px;
+	margin-right: 20px;
+  }
+}
+.ph5 {
+	color: orange;
+	font-size: 20px;
+	text-align: center;
+	font-weight: bolder;
+}
+.ph6 {
+	color: orange;
+	font-size: 15px;
+	text-align: center;
+	font-weight: bolder;
+}
+.ph7 {
+	margin-top: 30px;
+	color: orange;
+	font-size: 30px;
+	font-weight: bolder;
+	text-align: center;
+}
+.pa8 {
+	color: whitesmoke;
+	font-size: 20px;
+	text-align: center;
+	font-weight: bolder;
+}
+@media (min-width: 1200px) {
+  .pa3 {
+  color: #a69e92;
+	text-align: justify;
+	margin-left: 100px;
+	margin-right: 750px;
+  }
+}
+/* If the screen size is smaller than 1200px, set the font-size to 80px */
+@media (max-width: 1199.98px) {
+  .pa3 {
+  color: #a69e92;
+	text-align: justify;
+	margin-left: 20px;
+	margin-right: 20px;
+  }
+}
